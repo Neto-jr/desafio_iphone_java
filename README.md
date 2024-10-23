@@ -1,14 +1,17 @@
-# desafio_iphone_java
+desafio_iphone_java
+#Codigo simples
 public class iPhone {
-    private String modelo;
-    private int capacidade; // em GB
-    private int bateria; // em porcentagem
+   -- private String modelo;
+    -- private int capacidade; // em GB
+   -- private int bateria; // em porcentagem
+    
     // Construtor
     public iPhone(String modelo, int capacidade, int bateria) {
         this.modelo = modelo;
         this.capacidade = capacidade;
         this.bateria = bateria;
     }
+    
     // Método para tocar música
     public void tocarMusica(String musica) {
         if (bateria > 0) {
@@ -18,6 +21,7 @@ public class iPhone {
             System.out.println("Bateria baixa. Carregue o iPhone.");
         }
     }
+    
     // Método para fazer uma chamada
     public void fazerChamada(String numero) {
         if (bateria > 0) {
@@ -27,24 +31,28 @@ public class iPhone {
             System.out.println("Bateria baixa. Carregue o iPhone.");
         }
     }
+    
     // Método para navegar na internet
     public void navegarInternet(String url) {
         if (bateria > 0) {
             System.out.println("Navegando para: " + url);
             bateria -= 5; // Reduz bateria ao navegar
-        } else {
+        }
+        
+        else {
             System.out.println("Bateria baixa. Carregue o iPhone.");
         }
     }
+    
     // Getters e Setters (opcionais)
     public String getModelo() {
         return modelo;
     }
-
+    
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-
+    
     public int getCapacidade() {
         return capacidade;
     }
